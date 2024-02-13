@@ -18,11 +18,6 @@
 #include "minilzlib/minlzma.h"
 #include "tinf/tinf.h"
 
-#if defined(__GLIBC__)
-#include <ctype.h>
-#include <stdlib.h>
-#endif
-
 // Kernels must be 2MB aligned
 #define KERNEL_ALIGN (2 << 20)
 
