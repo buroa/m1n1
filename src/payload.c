@@ -18,7 +18,7 @@
 #include "minilzlib/minlzma.h"
 #include "tinf/tinf.h"
 
-#ifdef __GLIBC__
+#if defined(__GLIBC__)
 #include <ctype.h>
 #include <stdlib.h>
 #endif

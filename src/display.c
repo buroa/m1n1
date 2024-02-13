@@ -14,7 +14,7 @@
 #include "utils.h"
 #include "xnuboot.h"
 
-#ifdef __GLIBC__
+#if defined(__GLIBC__)
 #include <stdlib.h>
 #endif
 
