@@ -82,9 +82,8 @@ int debug_printf(const char *fmt, ...)
     return i;
 }
 
-void __assert_fail(const char *assertion, const char *file, unsigned int line, const char *function)
+void __assert_fail(const char *, const char *, unsigned int, const char *)
 {
-    printf("Assertion failed: '%s' on %s:%d:%s\n", assertion, file, line, function);
     flush_and_reboot();
 }
 
