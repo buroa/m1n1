@@ -13,6 +13,7 @@
 #include "kboot.h"
 #include "smp.h"
 #include "utils.h"
+#include "stdlib.h"
 
 #include "libfdt/libfdt.h"
 #include "minilzlib/minlzma.h"
