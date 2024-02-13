@@ -13,6 +13,7 @@
 #include "string.h"
 #include "utils.h"
 #include "xnuboot.h"
+#include "stdlib.h"
 
 #define DISPLAY_STATUS_DELAY         100
 #define DISPLAY_STATUS_RETRIES(dptx) ((dptx) ? 100 : 20)
