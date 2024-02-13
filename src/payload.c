@@ -8,17 +8,20 @@
 #include "assert.h"
 #include "chainload.h"
 #include "cpufreq.h"
-#include "ctype.h"
 #include "display.h"
 #include "heapblock.h"
 #include "kboot.h"
 #include "smp.h"
-#include "stdlib.h"
 #include "utils.h"
 
 #include "libfdt/libfdt.h"
 #include "minilzlib/minlzma.h"
 #include "tinf/tinf.h"
+
+#ifdef __MUSL__
+#include <ctype.h>
+#include <stdlib.h>
+#endif
 
 // Kernels must be 2MB aligned
 #define KERNEL_ALIGN (2 << 20)

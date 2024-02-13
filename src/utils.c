@@ -82,11 +82,7 @@ int debug_printf(const char *fmt, ...)
     return i;
 }
 
-#ifdef __GLIBC__
-void __assert_fail(const char *__assertion, const char *__file, unsigned int __line, const char *__function)
-#else
-void __assert_fail(const char *__assertion, const char *__file, int __line, const char *__function)
-#endif
+void __assert_fail(const char *assertion, const char *file, unsigned int line, const char *function)
 {
     printf("Assertion failed: '%s' on %s:%d:%s\n", assertion, file, line, function);
     flush_and_reboot();
